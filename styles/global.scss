@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Source+Sans+Pro&display=swap');
+
 body {
-    background: lightblue;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather';
+    font-weight: 900;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+p, small {
+    font-weight: 400;
 }

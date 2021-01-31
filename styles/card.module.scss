@@ -1,19 +1,59 @@
 .cards {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    border: 1px dashed darkgrey;
+    border-radius: 8px;
+
+    h2, h3, p {
+        margin: 0;
+    }
 }
 
 .card {
     list-style: none;
-    flex: 0 0 25%;
+    border-bottom: 1px dashed darkgrey;
+    display: flex;
+    flex-direction: row;
 
+    &:last-of-type {
+        border-bottom: none;
+    }
+
+    &__imageHolder {
+        min-width: 5rem;
+        justify-content: center;
+        display: flex;
+        border-right: 1px dashed darkgrey;
+        padding: 1rem 0;
+    }
 
     &__image {
         margin: 0 auto;
-        max-width: 100px;
-        transform: rotateZ(90deg);
-        left: 0;
+        max-height: 100px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        padding: 1rem 0;
+    }
+
+    &__header {
+        display: inline-flex;
+        align-items: baseline;
+        padding: 0 1rem 0.5rem;
+        justify-content: space-between;
+    }
+
+    &__tagline,
+    &__description {
+        padding: 0 1rem;
+    }
+
+    &__button {
+        margin: 1rem 1rem 0;
+        cursor: pointer;
+        padding: 0.25rem;
     }
 }
