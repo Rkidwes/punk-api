@@ -1,0 +1,19 @@
+.cards {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    list-style: none;
+    flex: 0 0 25%;
+
+
+    &__image {
+        margin: 0 auto;
+        max-width: 100px;
+        transform: rotateZ(90deg);
+        left: 0;
+    }
+}
